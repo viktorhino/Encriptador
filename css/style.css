@@ -6,10 +6,14 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #f3f5fc;
+}
+
 .container { 
     display: flex;
     flex-direction: row;
-    background: #f3f5fc;
+
     /* height: 100vh; */
     gap: 5%;
     position: relative;
@@ -31,14 +35,17 @@
     }
 
     .txt-origen {
+        /* display: table-cell; */
         background-color: #f3f5fc;
         border: none;
         font-size: 1.5em;
         font-weight: 400;
         line-height:150%;
+        height: 15em;
         resize: none;
         padding: 0.3em 0.5em ;
         width: 100%;
+
         border: 1px dotted #d8dfe8;
     }
 
@@ -47,7 +54,7 @@
         }
 
         .txt-origen:focus, .txt-origen:active {
-            border: none;
+            border: 1px dotted #b8bec5;
             outline: none;
         }
 
@@ -175,19 +182,24 @@
     }
     .img-app {
         width: 100%;
-        padding: 0 3em 1em 3em;
-        padding-bottom: 2em;
+        padding: 0 4em 1em 4em;
+        padding-bottom: 1em;
     }
     .txt-origen {
-        height: 15%;
+        height: 200px;
     }
     .botones {
-        padding-top: 1em;
+        padding-top: 0.2em;
         flex-direction: column;
         gap: 0.2em
     }
     button {
         width: 95%;
+    }
+    button:hover {
+        margin: 0.3%;
+        width: 94.5%;
+        padding: 0.6em;
     }
     .mensajes {
         width: 95%;

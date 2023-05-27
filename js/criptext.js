@@ -1,3 +1,7 @@
+/** ENFOCAMOS EL CURSOR EN EL CAMPO DE TEXTO LISTO PARA ENCRIPTAR */
+document.getElementById("txt-origen").focus();
+
+
 function encriptar(){
     let campoOrigen = document.getElementById("txt-origen");
     let textoOrigen = campoOrigen.value;
